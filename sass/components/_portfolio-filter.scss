@@ -1,0 +1,61 @@
+/* Portfolio-Filter */
+
+.portfolio-filter {
+  display: flex;
+  justify-content: start;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 40px;
+
+    &__item:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__button {
+    width: auto;
+    height: auto;
+    padding: 6px 22px;
+    text-align: center;
+    font-family: inherit;
+    background-color: var(--team-background-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__button:hover,
+  &__button:focus,
+  .list.current {
+    border: none;
+    color: var(--section-accent-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

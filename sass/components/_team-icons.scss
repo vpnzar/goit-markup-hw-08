@@ -1,0 +1,13 @@
+/* Team-Icons */
+
+.team-icons {
+  display: inline-flex;
+
+  &__link {
+    @extend %social-icons;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}

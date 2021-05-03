@@ -1,0 +1,26 @@
+/* Footer-Contacts */
+
+.footer-contact {
+  display: block;
+  padding-bottom: 60px;
+  text-align: center;
+
+  &__address {
+    margin-top: 20px;
+  }
+  &__text {
+    color: var(--section-accent-color);
+    font-style: normal;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 9px;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+  }
+}

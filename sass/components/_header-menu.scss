@@ -1,0 +1,40 @@
+.menu-container {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.header-drop {
+  position: absolute;
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  right: 10px;
+  top: 10px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border: hidden;
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &--is-open .icon-cross {
+    display: block;
+  }
+
+  &--is-open .icon-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+// .menu-button__icon:hover {
+//   fill: var(--accent-color);
+// }

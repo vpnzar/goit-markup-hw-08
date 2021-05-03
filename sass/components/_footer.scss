@@ -1,0 +1,23 @@
+/* Footer */
+
+.footer {
+  padding-bottom: 60px;
+  color: var(--section-accent-color);
+  background-color: var(--secondary-background-color);
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+
+  & .container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@mixin team-title($font, $line) {
+  font-size: $font;
+  line-height: $line;
+}
+
+@mixin client-size($width) {
+  width: $width;
+}
+
+@mixin footer_input($width) {
+  width: $width;
+}
