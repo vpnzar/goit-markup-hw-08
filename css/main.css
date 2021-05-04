@@ -930,6 +930,7 @@ p {
 
 .header-drop-icons__link {
   display: flex;
+  text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -962,25 +963,25 @@ p {
 }
 
 /* Hero-Section */
-@media screen and (min-width: 489px) {
+@media screen and (min-width: 478px) {
   .hero-section {
     background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url("../images/hero/img-hero767@1x.jpg");
   }
 }
 
-@media screen and (min-width: 489px) and (min-device-pixel-ratio: 2), screen and (min-width: 489px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 489px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 489px) and (min-resolution: 192dpi), screen and (min-width: 489px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 478px) and (min-device-pixel-ratio: 2), screen and (min-width: 478px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 478px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 478px) and (min-resolution: 192dpi), screen and (min-width: 478px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url("../images/hero/img-hero767@2x.jpg");
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero-section {
     background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url("../images/hero/img-hero1200@1x.jpg");
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url("../images/hero/img-hero1200@2x.jpg");
   }
@@ -1163,6 +1164,7 @@ p {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
+  z-index: 20;
 }
 
 .backdrop.is-hidden {
