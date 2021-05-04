@@ -38,13 +38,13 @@
   }
 
   & .advantage-list__item:not(:last-child) {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
   }
 
   & .advantage-list__item:nth-child(-n + 2) {
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 30px;
     }
   }
