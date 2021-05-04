@@ -34,18 +34,23 @@
 
     @media screen and (min-width: 1200px) {
       width: 270px;
-      margin-bottom: 0;
     }
   }
 
-  &__item:not(:last-child) {
-    @media screen and (min-width: 480px) {
+  & .advantage-list__item:not(:last-child) {
+    @media screen and (max-width: 480px) {
       margin-bottom: 30px;
     }
   }
 
-  &__item:nth-child(n + 2) {
-    @media screen and (min-width: 767px) {
+  & .advantage-list__item:nth-child(-n + 2) {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  & .advantage-list__item {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 0;
     }
   }
@@ -58,11 +63,5 @@
     align-items: center;
     background-color: var(--team-background-color);
     margin-bottom: 30px;
-  }
-}
-
-.advantage-list .advantage-list__item {
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
   }
 }
