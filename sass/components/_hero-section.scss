@@ -3,7 +3,7 @@
 .hero-section {
   @extend %hero-image;
 
-  @media screen and (min-width: 478px) {
+  @media screen and (min-width: 481px) {
     background-image: linear-gradient(
         var(--hero-gradient-color),
         var(--hero-gradient-color)
@@ -23,7 +23,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     background-image: linear-gradient(
         var(--hero-gradient-color),
         var(--hero-gradient-color)
