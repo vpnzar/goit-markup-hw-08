@@ -8,7 +8,7 @@
         var(--hero-gradient-color),
         var(--hero-gradient-color)
       ),
-      url("./images/hero1/img-hero767@1x.jpg");
+      url("./../images/hero1/img-hero767@1x.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -19,7 +19,7 @@
           var(--hero-gradient-color),
           var(--hero-gradient-color)
         ),
-        url("./images/hero1/img-hero767@2x.jpg");
+        url("./../images/hero1/img-hero767@2x.jpg");
     }
   }
 
@@ -28,7 +28,7 @@
         var(--hero-gradient-color),
         var(--hero-gradient-color)
       ),
-      url("./images/hero1/img-hero1200@1x.jpg");
+      url("./../images/hero1/img-hero1200@1x.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -39,7 +39,7 @@
           var(--hero-gradient-color),
           var(--hero-gradient-color)
         ),
-        url("./images/hero1/img-hero1200@2x.jpg");
+        url("./../images/hero1/img-hero1200@2x.jpg");
     }
   }
 }

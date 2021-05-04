@@ -28,7 +28,7 @@
       var(--hero-gradient-color),
       var(--hero-gradient-color)
     ),
-    url("../images/hero1/img-hero480@1x.jpg");
+    url("./../images/hero1/img-hero480@1x.jpg");
   background-color: var(--hero-main-bgrn-color);
   color: var(--section-accent-color);
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@
         var(--hero-gradient-color),
         var(--hero-gradient-color)
       ),
-      url("../images/hero1/img-hero480@2x.jpg");
+      url("./../images/hero1/img-hero480@2x.jpg");
   }
 }
 %gap-top-container {
