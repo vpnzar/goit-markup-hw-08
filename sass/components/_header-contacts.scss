@@ -1,8 +1,11 @@
 /* Header-Contacts*/
 
 .header-contact {
-  @media (max-width: 767px) {
-    display: none;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 302px;
+    margin-bottom: 64px;
   }
 
   @media screen and (min-width: 768px) {
@@ -21,6 +24,7 @@
 
   &__link {
     display: flex;
+    justify-content: start;
     align-items: center;
     color: var(--paragraph-text-color);
     font-weight: 500;
@@ -31,6 +35,9 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+    }
 
     @media screen and (min-width: 768px) {
       font-size: 12px;
@@ -45,6 +52,21 @@
   &__link:not(:last-child) {
     @media screen and (min-width: 768px) {
       margin-bottom: 10px;
+    }
+  }
+
+  &__link--phone {
+    @media screen and (max-width: 767px) {
+      font-size: 34px;
+      line-height: 1.18;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__link--mail {
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 1.17;
     }
   }
 
@@ -76,6 +98,10 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
 
     &--mail {
       width: 14px;

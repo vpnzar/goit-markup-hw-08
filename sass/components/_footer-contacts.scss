@@ -1,9 +1,14 @@
 /* Footer-Contacts */
 
 .footer-contact {
+  @extend %gap-bottom-container;
+
   display: block;
-  padding-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 
   &__address {
     margin-top: 20px;
@@ -16,11 +21,18 @@
   &__link {
     display: block;
     margin-top: 9px;
-
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
     list-style: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
   }
 }

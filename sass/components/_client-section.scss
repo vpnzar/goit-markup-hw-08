@@ -1,6 +1,9 @@
 /* Clients-Section */
 
 .client-section {
+  @extend %gap-top-container;
+  @extend %gap-bottom-container;
+
   &__title {
     margin-bottom: 30px;
     text-align: center;

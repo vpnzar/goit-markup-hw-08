@@ -35,3 +35,24 @@
   background-position: center;
   background-size: cover;
 }
+
+%gap-top-container {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+}
+
+%gap-bottom-container {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+}
+
+%gap-footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

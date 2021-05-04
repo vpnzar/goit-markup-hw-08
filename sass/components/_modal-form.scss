@@ -7,10 +7,14 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.17;
+    }
   }
 }
 
@@ -42,6 +46,7 @@
 
   &__input {
     margin: 0;
+    height: 40px;
     cursor: pointer;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -98,10 +103,11 @@
 
 .form-field-submit {
   @extend .button;
-  padding: 0;
-  margin-left: 124px;
-  margin-right: 124px;
-  margin-bottom: 30px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
 
   &:hover,
   &:focus {

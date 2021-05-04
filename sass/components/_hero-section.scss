@@ -2,23 +2,26 @@
 
 .hero-section {
   @extend %hero-image;
+
   background-image: linear-gradient(
       var(--hero-gradient-color),
       var(--hero-gradient-color)
     ),
     url("../images/hero/img-hero480@1x.jpg");
-}
 
-@media (min-resolution: 2dppx) {
-  background-image: linear-gradient(
-      var(--hero-gradient-color),
-      var(--hero-gradient-color)
-    ),
-    url("../images/hero/img-hero480@2x.jpg");
-}
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        var(--hero-gradient-color),
+        var(--hero-gradient-color)
+      ),
+      url("../images/hero/img-hero480@2x.jpg");
+  }
 
-@media screen and (min-width: 489px) {
-  .hero-section {
+  @media screen and (min-width: 489px) {
     background-image: linear-gradient(
         var(--hero-gradient-color),
         var(--hero-gradient-color)
@@ -26,19 +29,19 @@
       url("../images/hero/img-hero767@1x.jpg");
   }
 
-  @media (min-resolution: 2dppx) {
-    .hero-section {
-      background-image: linear-gradient(
-          var(--hero-gradient-color),
-          var(--hero-gradient-color)
-        ),
-        url("../images/hero/img-hero767@2x.jpg");
-    }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        var(--hero-gradient-color),
+        var(--hero-gradient-color)
+      ),
+      url("../images/hero/img-hero767@2x.jpg");
   }
-}
 
-@media screen and (min-width: 768px) {
-  .hero-section {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         var(--hero-gradient-color),
         var(--hero-gradient-color)
@@ -46,14 +49,16 @@
       url("../images/hero/img-hero1200@1x.jpg");
   }
 
-  @media (min-resolution: 2dppx) {
-    .hero-section {
-      background-image: linear-gradient(
-          var(--hero-gradient-color),
-          var(--hero-gradient-color)
-        ),
-        url("../images/hero/img-hero1200@2x.jpg");
-    }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        var(--hero-gradient-color),
+        var(--hero-gradient-color)
+      ),
+      url("../images/hero/img-hero1200@2x.jpg");
   }
 }
 

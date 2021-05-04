@@ -1,5 +1,10 @@
 /* Portfolio-Section */
 
+.portfolio-section {
+  @extend %gap-top-container;
+  @extend %gap-bottom-container;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;

@@ -1,6 +1,9 @@
 /* Advantage-Section */
 
 .advantage-section {
+  @extend %gap-top-container;
+  @extend %gap-bottom-container;
+
   &__title {
     height: 16px;
     font-size: 14px;
@@ -49,7 +52,6 @@
 
   &__icon {
     display: flex;
-    // width: 270px;
     height: 120px;
     border-radius: 4px;
     justify-content: center;

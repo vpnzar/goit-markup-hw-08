@@ -1,8 +1,9 @@
 /* Footer-Join */
 
 .footer-join {
+  @extend %gap-bottom-container;
+
   display: block;
-  padding-bottom: 60px;
   text-align: center;
 
   &__title {

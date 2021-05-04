@@ -1,18 +1,20 @@
 /* Subscribe footer-field */
 
 .sub-form {
-  // display: block;
-  // align-items: center;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  // width: 570px;
-  // height: 86px;
   margin: 0;
   padding: 0;
 
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    align-items: flex-end;
+  }
+
   &__field {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
   }
@@ -29,7 +31,6 @@
 
   &__input {
     padding: 15px 16px;
-    margin-bottom: 20px;
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -38,12 +39,9 @@
     background-color: inherit;
     color: var(--input-text-color);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
       @include footer-input(450px);
-    }
-
-    @media screen and (min-width: 768px) {
-      @include footer-input(450px);
+      margin-bottom: 20px;
     }
 
     @media screen and (min-width: 1200px) {

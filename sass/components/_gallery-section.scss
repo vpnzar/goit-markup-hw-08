@@ -1,4 +1,9 @@
 .gallery-section {
+  @extend %gap-top-container;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
   @media (max-width: 1199px) {
     display: none;
     padding-top: 0;

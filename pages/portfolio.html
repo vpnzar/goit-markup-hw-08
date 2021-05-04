@@ -16,65 +16,120 @@
           <a class="logo header__logo" href="../"
             ><span class="logo__text">Web</span>Studio</a
           >
-          <ul class="header-list link">
-            <li class="header-list__item">
-              <a class="header-list__link link" href="../index.html">Студия</a>
-            </li>
-            <li class="header-list__item">
-              <a
-                class="header-list__link link header-list__link--current"
-                href="./pages/portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="header-list__item">
-              <a class="header-list__link link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-contact">
-          <a class="header-contact__link" href="mailto:info@devstudio.com">
-            <svg
-              class="header-contact__icon header-contact__icon--mail"
-              width="16"
-              height="12"
-            >
-              <use href="../images/header-sprite.svg#icon-mail"></use></svg
-            >info@devstudio.com</a
+          <!--Header-Menu-->
+          <div
+            class="menu-container header-drop--is-open"
+            id="menu-container"
+            data-menu
           >
-          <a class="header-contact__link" href="tel:+380961111111"
-            ><svg
-              class="header-contact__icon header-contact__icon--phone"
-              width="10"
-              height="16"
+            <div class="header-navigation">
+              <ul class="header-list link">
+                <li class="header-list__item">
+                  <a class="header-list__link link" href="../index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="header-list__item">
+                  <a
+                    class="header-list__link link header-list__link--current"
+                    href="../pages/portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="header-list__item">
+                  <a class="header-list__link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-contact">
+              <a
+                class="header-contact__link header-contact__link--mail"
+                href="mailto:info@devstudio.com"
+              >
+                <svg
+                  class="header-contact__icon header-contact__icon--mail"
+                  width="16"
+                  height="12"
+                >
+                  <use href="../images/header-sprite.svg#icon-mail"></use></svg
+                >info@devstudio.com</a
+              >
+              <a
+                class="header-contact__link header-contact__link--phone"
+                href="tel:+380961111111"
+                ><svg
+                  class="header-contact__icon header-contact__icon--phone"
+                  width="10"
+                  height="16"
+                >
+                  <use
+                    href="../images/header-sprite.svg#icon-smartphone"
+                  ></use></svg
+                >+38 096 111 11 11
+              </a>
+            </div>
+
+            <ul class="header-drop-icons list">
+              <li class="header-drop-icons__item">
+                <a
+                  href=""
+                  class="header-drop-icons__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="header-drop-icons__item">
+                <a
+                  href=""
+                  class="header-drop-icons__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="header-drop-icons__item">
+                <a
+                  href=""
+                  class="header-drop-icons__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="header-drop-icons__item">
+                <a
+                  href=""
+                  class="header-drop-icons__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="header-drop header-drop--is-open"
+            aria-label="Закрыть"
+            data-menu-button
+          >
+            <svg
+              class="header-drop__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
             >
               <use
-                href="../images/header-sprite.svg#icon-smartphone"
-              ></use></svg
-            >+38 096 111 11 11
-          </a>
-        </div>
-        <button
-          class="header-drop header-drop--is-open"
-          aria-label="Закрыть"
-          data-menu-button
-        >
-          <svg
-            class="header-drop__icon"
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use
-              class="icon-cross"
-              href="../images/modal-sprite.svg#icon-menu-close_40"
-            ></use>
-            <use
-              class="icon-menu"
-              href="../images/modal-sprite.svg#icon-menu_40"
-            ></use>
-          </svg>
-        </button>
+                class="icon-cross"
+                href="../images/modal-sprite.svg#icon-menu-close_40"
+              ></use>
+              <use
+                class="icon-menu"
+                href="../images/modal-sprite.svg#icon-menu_40"
+              ></use>
+            </svg>
+          </button>
+        </nav>
       </div>
     </header>
 
