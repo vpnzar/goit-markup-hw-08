@@ -194,6 +194,14 @@ summary {
   background-size: cover;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2 / 1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url("./../images/hero1/img-hero480@2x.jpg");
@@ -201,19 +209,31 @@ summary {
 }
 
 @media screen and (max-width: 1199px) {
-  .team-section, .advantage-section, .gallery-section, .client-section, .portfolio-section {
+  .team-section, .advantage-section, .client-section, .portfolio-section {
     padding-top: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team-section, .advantage-section, .gallery-section, .client-section, .portfolio-section {
+  .team-section, .advantage-section, .client-section, .portfolio-section {
     padding-top: 94px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .team-section, .advantage-section, .client-section, .portfolio-section, .footer-contact, .footer-join {
+  .team-section, .advantage-section, .gallery-section, .client-section, .portfolio-section {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section, .advantage-section, .gallery-section, .client-section, .portfolio-section {
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-contact, .footer-join {
     padding-bottom: 60px;
   }
 }
@@ -1220,6 +1240,7 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .modal-close__icon:hover {
@@ -1387,7 +1408,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .advantage-list .advantage-list__item:nth-child(-n + 2) {
+  .advantage-list__item:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }
@@ -1406,12 +1427,6 @@ p {
   align-items: center;
   background-color: var(--team-background-color);
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 1200px) {
-  .gallery-section {
-    padding-top: 94px;
-  }
 }
 
 @media (max-width: 1199px) {
@@ -1647,6 +1662,12 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: start;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer .container {
     display: flex;
@@ -1705,6 +1726,12 @@ p {
   display: block;
   text-align: center;
   /* Footer-Join-Icons */
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-join {
+    text-align: start;
+  }
 }
 
 .footer-join__title {
