@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::after,
 *::before {
@@ -74,5 +75,9 @@ p {
 }
 
 .body.modal-open {
+  overflow: hidden;
+}
+
+.body.header-drop--is-open {
   overflow: hidden;
 }
