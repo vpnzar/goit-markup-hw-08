@@ -79,5 +79,6 @@ p {
 }
 
 .body.header-drop--is-open {
-  overflow: hidden;
+  overflow: hidden !important;
+  position: fixed;
 }

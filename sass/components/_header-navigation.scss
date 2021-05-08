@@ -24,6 +24,14 @@
   &__link {
     position: relative;
 
+    @media screen and (max-width: 767px) {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+      color: var(--primary-text-color);
+    }
+
     @media screen and (min-width: 768px) {
       display: block;
       padding-top: 32px;
@@ -31,6 +39,12 @@
       transition-property: color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  & &__link {
+    @media screen and (max-width: 479px) {
+      font-size: 30px;
     }
   }
 
@@ -48,11 +62,6 @@
   &__item {
     @media screen and (max-width: 767px) {
       margin-bottom: 32px;
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 1.18;
-      letter-spacing: 0.02em;
-      color: var(--primary-text-color);
     }
   }
 
